@@ -17,9 +17,9 @@
                 <img src="images/r2d2.png" alt="" style="width: 5rem; height: 5rem;">
             </a>
             <nav class="nav">
-                <a href="registrarse.html">REGISTRARSE</a>
+                <a href="registrarse.php">REGISTRARSE</a>
                 <a href="contacto.html">CONTACTO</a>
-                <a href="login.html">INICIAR SESIÓN</a>
+                <a href="login.php">INICIAR SESIÓN</a>
             </nav>
             <div class="social">
                 <a href="http://www.twitter.com" target="_blank">
@@ -39,20 +39,53 @@
     <section class="padding-blue">
     </section>
 
+
     <main>
+        <div class="luke">
+            <img src="images/luk2.webp" alt="Imagen de luje" style="height: 50rem; width: 30rem;">
+        </div>
         <section class="form">
-            <h2>Formulario Login</h2>
+            <form action="#" method="post" autocomplete="off">
+
+            <h2>Formulario de registro</h4>
             <div class="input-group">
-            <input class="" type="text" name="usuario" value="" placeholder="Usuario">
-            <input class="" type="password" name="contrasena" placeholder="Contraseña">
-            <input class="btn" type="submit" name="" value="Ingresar">
-        </div>
-        <div class="form-txt">
-            <p><a href="#">¿Olvidaste tu Contraseña?</a></p>
 
-        </div>
+            <input 
+                type="text" 
+                name="name" 
+                id="nombres" 
+                placeholder="Ingrese su nombre">
+            <input 
+                type="tel" 
+                name="phone" 
+                id="nombres" 
+                placeholder="Ingrese su número de telefono">
+            <input 
+                type="email" 
+                name="email" 
+                id="correo" 
+                placeholder="Ingrese su correo">
+            <input 
+                type="password" 
+                name="password" 
+                id="contrasena" 
+                placeholder="Ingrese su contraseña">
+            <p>Estoy de acuerdo con <a href="#">Términos y condiciones</a></p>
+            <input class="btn" type="submit" name="send" value="Enviar">
+            <p><a href="#">Ya tengo una cuenta</a></p>
+
+            </div>
+            </form>
+
         </section>
-    </main>
 
+
+        <?php 
+        include("includes/send.php");
+    ?>
+        <div class="darth">
+            <img src="images/Vader.webp" alt="Imagen de luje" style="height: 50rem; width: 30rem;">
+        </div>
+    </main>
 </body>
 </html>

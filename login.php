@@ -17,9 +17,9 @@
                 <img src="images/r2d2.png" alt="" style="width: 5rem; height: 5rem;">
             </a>
             <nav class="nav">
-                <a href="registrarse.html">REGISTRARSE</a>
+                <a href="registrarse.php">REGISTRARSE</a>
                 <a href="contacto.html">CONTACTO</a>
-                <a href="login.html">INICIAR SESIÓN</a>
+                <a href="login.php">INICIAR SESIÓN</a>
             </nav>
             <div class="social">
                 <a href="http://www.twitter.com" target="_blank">
@@ -39,43 +39,28 @@
     <section class="padding-blue">
     </section>
 
-
     <main>
-        <div class="luke">
-            <img src="/images/luk2.webp" alt="Imagen de luje" style="height: 50rem; width: 30rem;">
-        </div>
         <section class="form">
-            <h2>Formulario de registro</h4>
-            <div class="input-group">
+            <form action="" method="POST">
+                <?php
+                    include("includes/conexion.php");
+                    include("includes/controlador.php");
+                ?>
 
-            <input 
-                type="text" 
-                name="nombres" 
-                id="nombres" 
-                placeholder="Ingrese su nombre">
-            <input 
-                type="text" 
-                name="apellidos" 
-                id="apellidos" 
-                placeholder="Ingrese sus pellidos">
-            <input 
-                type="email" 
-                name="correo" 
-                id="correo" 
-                placeholder="Ingrese su correo">
-            <input 
-                type="password" 
-                name="contrasena" 
-                id="contrasena" 
-                placeholder="Ingrese su contraseña">
-            <p>Estoy de acuerdo con <a href="#">Términos y condiciones</a></p>
-            <input class="btn" type="subtmit" value="Registrar">
-            <p><a href="#">Ya tengo una cuenta</a></p>
-            </div>
-        </section>
-        <div class="darth">
-            <img src="/images/Vader.webp" alt="Imagen de luje" style="height: 50rem; width: 30rem;">
+                <div class="input-group">
+                    <input class="" type="text" name="email" value="" placeholder="Usuario">
+                    <input class="" type="password" name="password" placeholder="Contraseña">
+                    <input class="btn" type="submit" name="btningresar" value="Ingresar">
+                </div>
+            </form>
+            <h2>Formulario Login</h2>
+
+        <div class="form-txt">
+            <p><a href="#">¿Olvidaste tu Contraseña?</a></p>
+
         </div>
+        </section>
     </main>
+
 </body>
 </html>
