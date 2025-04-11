@@ -7,6 +7,7 @@ html{
 /*Utilidades*/
 h1{
     font-size: 3.8rem;
+
 }
 h2{
     font-size: 3.4rem;
@@ -220,6 +221,7 @@ color: blue;
     display: flex;
     flex-direction: column;
     text-align: left;
+   
 }
 .input-group label {
     color: white;
@@ -239,7 +241,7 @@ input, textarea {
     border-radius: 25px;
     margin-bottom: 20px;
     background-color: #EDFFF0;
-    border: 2px solid #F0FAF1;
+    font-size: 2rem;
 }
 
 input::placeholder, textarea::placeholder {
@@ -294,6 +296,7 @@ input::placeholder, textarea::placeholder {
     input 
     {
         padding: 15px;
+        font-size: 2rem;
     }
 
 

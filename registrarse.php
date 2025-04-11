@@ -58,7 +58,7 @@
             <input 
                 type="tel" 
                 name="phone" 
-                id="nombres" 
+                id="phone" 
                 placeholder="Ingrese su número de telefono">
             <input 
                 type="email" 
