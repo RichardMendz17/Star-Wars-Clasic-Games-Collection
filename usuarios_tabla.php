@@ -1,6 +1,10 @@
 <?php 
 session_start();
 include("includes/conexion.php"); // Asegúrate de que "conexion.php" establece correctamente $conn
+if (!isset($_SESSION['usuarioingresando'])) {
+    header("Location: index.php");
+    exit;
+}
 
 $usuarioingresado = $_SESSION['usuarioingresando'];
 $buscandousu = mysqli_query($conn, "SELECT * FROM usuarios WHERE correo = '$usuarioingresado'");
