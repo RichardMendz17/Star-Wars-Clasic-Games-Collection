@@ -5,25 +5,21 @@
         if (
             strlen($_POST['name']) >= 1 &&
             strlen($_POST['email']) >= 1 &&
-            strlen($_POST['password']) >= 1 &&
-            strlen($_POST['phone']) >= 1 
+            strlen($_POST['password']) >= 1
         ) 
         {
             $name = trim($_POST['name']);
             $email = trim($_POST['email']);
             $password = trim($_POST['password']);
-            $phone = trim($_POST['phone']);
+            $rol = 'Visitante';
             $fecha = date("d/m/y");
-            $consulta = "INSERT INTO datos(nombre, email, contraseña, telefono, fecha) VALUES ('$name','$email','$password','$phone', '$fecha' )";
-            $resultado = mysqli_query($conex, $consulta);
-            if($resultado){
-                ?>
-                <h3 class="success">Tu registro se ha completado</h3>
-                <?php
-            } else {
-                ?>
-                <h3 class="error">Ocurrio un error</h3>
-                <?php
+            $consulta = "INSERT INTO usuarios(nom, correo,pass,rol) VALUES ('$name', '$email', '$password', '$rol')";
+            $resultado = mysqli_query($conn, $consulta);
+            if ($resultado) {
+                echo "<script>alert('Usuario registrado con éxito: $nombre'); window.location='index.php'</script>";
+            }
+            else{
+                echo "<script>alert('Correo duplicado, intenta con otro correo'); </script>";
             }
         }
         else {

@@ -34,11 +34,6 @@
                 id="nombres" 
                 placeholder="Ingrese su nombre">
             <input 
-                type="tel" 
-                name="phone" 
-                id="phone" 
-                placeholder="Ingrese su número de telefono">
-            <input 
                 type="email" 
                 name="email" 
                 id="correo" 
@@ -60,7 +55,7 @@
 
         <?php 
         include("includes/send.php");
-    ?>
+        ?>
         <div class="darth">
             <img src="images/Vader.webp" alt="Imagen de luje" style="height: 50rem; width: 30rem;">
         </div>
