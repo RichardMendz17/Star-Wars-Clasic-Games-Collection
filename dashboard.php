@@ -19,7 +19,7 @@ $_SESSION['rol'] = $mostrar['rol'];
     <link rel="stylesheet" href="css/style.css">
     <script src="includes/verhora.js"></script>
     </head>
-<body class="body" onload="setInterval(verhorafor12, 1000)">
+<body onload="setInterval(verhorafor12, 1000)">
     <header class="header">
         <div class="barra">
                 <a href="index.php">
@@ -44,7 +44,7 @@ $_SESSION['rol'] = $mostrar['rol'];
             </div>
             <nav class="nav">
                 <a href="usuarios_tabla.php">VER USUARIOS</a>
-                <a href="includes/cerrar_sesion.php">Cerrar Sesión</a>
+                <a href="includes/cerrar_sesion.php">CERRAR SESIÓN</a>
             </nav>
             <div class="NomUsuario">
                 <?php echo isset($mostrar['nom']) ? $mostrar['nom'] : "Usuario"; ?>

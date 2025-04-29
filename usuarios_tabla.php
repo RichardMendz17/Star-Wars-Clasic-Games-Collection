@@ -19,8 +19,8 @@ $_SESSION['rol'] = $mostrar['rol'];
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="includes/verhora.js"></script>
-    </head>
-<body class="body" onload="setInterval(verhorafor12, 1000)">
+</head>
+<body  onload="setInterval(verhorafor12, 1000)">
     <header class="header">
         <div class="barra">
                 <a href="index.php">
@@ -44,13 +44,12 @@ $_SESSION['rol'] = $mostrar['rol'];
                 </form>
             </div>
             <nav class="nav">
-                <a href="dashboard.php">DASHBOARD</a>
-                <a href="includes/cerrar_sesion.php">Cerrar Sesión</a>
+                <a href="DASHBOARD.php">DASHBOARD</a>
+                <a href="includes/cerrar_sesion.php">CERRAR SESIÓN</a>
             </nav>
         </div> <!--Aqui termina class barra-->
     </header>
 <hr>
-
 <div class="ContenidoPrincipal">
     <h1><?php echo "Bienvenido: ". (isset($mostrar['nom']) ? $mostrar['nom'] : "Usuario"); ?></h1>
     <h2><?php echo "Correo: ". (isset($mostrar['correo']) ? $mostrar['correo'] : "No disponible"); ?></h2>
@@ -91,7 +90,7 @@ $_SESSION['rol'] = $mostrar['rol'];
     <div class="ContenedorTabla">
         <!-- Formulario para buscar usuarios -->
         <form method="POST">
-    <h1>Lista de usuarios</h1>
+    <h2>Lista de usuarios</h2>
 
     <div class="form-container">
         <a href="usuarios_tabla.php" class="BotonesUsuarios">Inicio de la tabla</a>

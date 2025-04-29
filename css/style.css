@@ -148,7 +148,7 @@ main {
     margin-top: 180px;
     box-shadow: 7px 13px 37px #000;
     padding: 20px 30px;
-    border-top: 4px solid #017BAB ;
+    border-top: 4px solid #331b3b ;
     color: white;
 }
 .form-login h5{
@@ -162,7 +162,7 @@ main {
 
 .controls {
     width: 95%;
-    border: 1px solid #017bab;
+    border: 1px solid #331b3b;
     padding: 11px;
     margin-bottom: 15px;
     background: #252323;
@@ -193,9 +193,11 @@ main {
 
 .form-login a:hover {
 text-decoration: underline;
-color: blue;
+color: #331b3b;
 }
-
+.CajaTexto{
+    font-size: 20px;
+}
 /* Contacto */
 
 .form {
@@ -245,7 +247,7 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-    color: #23178c;
+    color: #331b3b;
 }
 
 .form-txt {
